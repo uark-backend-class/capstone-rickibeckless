@@ -1,0 +1,131 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p, a {
+    font-family: sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #353535;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logoImg {
+    border-radius: 15px;
+}
+
+.navlinks {
+    flex: 2;
+    text-align: center;
+}
+
+.navlinks a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.navlinks a:hover, .login a:hover{
+    color: #f57e3b;
+}
+
+.login {
+    flex: 1;
+    text-align: right;
+}
+
+.login a{
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.searchbar {
+    flex: 1;
+    text-align: right;
+}
+
+.searchbar form {
+    display: flex;
+}
+
+.searchbar input[type="text"] {
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.searchbar button {
+    padding: 5px 10px;
+    background-color: #f57e3b;
+    border: none;
+    color: white;
+    border-radius: 20px;
+}
+
+.containers {
+    position: relative;
+    min-height: calc(100vh - 71.43px);
+    display: flex;
+    flex-direction: column;
+}
+
+.middle-container {
+    padding: 105px 10px 0px;
+}
+
+.bottom-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: auto;    
+
+    padding: 10px;
+}
+
+.bcontainer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bc-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+    }
+    .middle-container {
+        padding: 150px 10px 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .bottom-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+}

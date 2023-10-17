@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search | Ricki's Bookshelf</title>
+        <link rel="stylesheet" href="./mainStyles.css">
+        <link rel="stylesheet" href="./searchStyles.css">
+        <link rel="icon" href="./images/BookshelfFavicon.png">
+        <script src="./searchScript.js" defer></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="./index.html" alt="home page">
+                    <img src="./images/BookshelfFavicon.png" alt="logo" class="logoImg">
+                </a>
+            </div>
+
+            <div class="navlinks">
+                <a href="#">Bookshelf</a>
+                <a href="#">Favorites</a>
+            </div>
+
+            <div class="login">
+                <a href="#">Login/Register</a>
+            </div>
+        </nav>
+
+        <div class="containers">
+            <div class="searchForm">
+                <form class="form">
+                    <h1 class="title">Search!</h1>
+
+                    <div class="inputContainer searchbar">
+                        <input type="text" id="searchInput" placeholder="Search" class="input" required>
+                        <label for="" class="label">Search for book here:</label>
+                    </div>
+    
+                    <div class="buttons">
+                        <button type="submit" class="submitBtn">Search</button>
+                    </div>
+                </form>
+            </div>
+            <div class="resultHolder">
+                <div class="resultContainer"></div>                
+            </div>
+        </div>
+
+        <div class="bottom-container">
+            <div class="bcontainer-content"></div>
+        </div>
+    </body>
+</html>

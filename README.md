@@ -1,2 +1,3 @@
-# YOUR PROJECT NAME
-Your project description.
+# BookSearch Express App v1
+
+Book search using Google Books API.
